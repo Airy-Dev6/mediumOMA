@@ -1,16 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio Front-end</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
 </head>
-
 <body>
+    <div class="container-fluid">
+
+        <header class="row my-2 mx-md-5 mx-1">
+            <div class="col-12 d-flex justify-content-between">
+                <div>
+                    LOGO
+                </div>
+                <div>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Búsqueda" aria-label="Search">
+                        <button class="btn btn-primary my-2 my-sm-0" type="submit">POST</button>
+                      </form>
+                </div>
+            </div>
+        </header>
+
+        <div class="row my-2 mx-md-5 mx-1">
+            <nav class="col-12 navbar navbar-light ">
+                <a href="">NAV1</a>
+                <a href="">NAV2</a>
+                <a href="">NAV3</a>
+                <a href="">NAV4</a>
+                <a href="">NAV5</a>
+            </nav>
+        </div>
+
+        <div class="row my-2 mx-md-5 mx-1">
+            <section class="col-12 col-md-8">
+                <div class="post-card d-flex">
+                    <div class="card-text">
+                        <span class="post-category">SCIENCE</span><span class="post-popular">Popular Topic</span>
+                        <h2 class="post-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It Will End by 2050</h2>
+                        <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum animi, impedit, minima nihil iste saepe assumenda voluptatum vitae accusamus facere enim rem inventore ullam illo reiciendis, magnam odit nulla ea...</p>
+                        <p class="post-author y-1">By David Wallace-Wells</p>
+                        <p class="post-date">Aug 06, 2019</p>
+                    </div>                
+                    <div class="card-image mx-md-3 mx-1">
+                        <img class="c-image" src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg">
+                    </div>
+                </div>
+                <div class="post-card d-flex">
+                    <div class="card-text">
+                        <a class="post-category">SCIENCE</a><span class="post-popular">Popular Topic</span>
+                        <h2 class="post-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It Will End by 2050</h2>
+                        <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum animi, impedit, minima nihil iste saepe assumenda voluptatum vitae accusamus facere enim rem inventore ullam illo reiciendis, magnam odit nulla ea...</p>
+                        <p class="post-author">By David Wallace-Wells</p>
+                        <p class="post-date">Aug 06, 2019</p>
+                    </div>                
+                    <div class="card-image mx-md-3 mx-1">
+                        <img class="c-image" src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg">
+                    </div>
+                </div> 
+            </section>
+
+            <div class="col-12 col-md-4">
+                <aside>
+                    <div>
+                        <h2 class="aside-header">MOST POPULAR</h2>
+                    </div>
+                    <div class="d-flex">
+                        <div class="aside-index">01</div>
+                        <div class="aside-text">
+                            <h2 class="aside-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It Will End by 2050</h2>
+                            <p class="aside-author">By David Wallace-Wells</p>
+                            <p class="aside-date">Aug 06, 2019</p>
+                        </div>
+                        
+
+                    </div>
+
+                    
+                </aside>
+                <footer>
+                    FOOTER
+                </footer>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -22,5 +107,4 @@
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>

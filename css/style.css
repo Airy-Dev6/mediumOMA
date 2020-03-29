@@ -1,1 +1,78 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-text{
+    width: 70%;
+}
+
+.card-image{
+    width: 30%;
+}
+
+.c-image{
+    width: 100%;
+}
+
+.post-category{
+    padding-right: 20px;
+    font-size: 15px;
+    color: gray;
+}
+
+.post-card{
+    padding-bottom: 20px;
+}
+
+.post-popular{
+    font-size: 15px;
+    font-style: oblique;
+    color: gray;
+}
+
+.post-title{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.post-text{
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 0;
+}
+
+.post-author{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.post-date{
+    font-size: 14px;
+    color: gray;
+}
+
+.aside-header{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.aside-index{
+    font-size: 25px;
+    font-weight: bold;
+    color: lightslategray;
+}
+
+.aside-title{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.aside-author{
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.aside-date{
+    font-size: 14px;
+    color: gray;
+}
