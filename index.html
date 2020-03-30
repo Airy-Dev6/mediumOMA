@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="/css/style.css">
     <title>Desafío 2</title>
 </head>
+
 <body>
-    
+
     <div class="container-fluid">
 
         <header class="row my-3 mx-md-5 mx-1">
@@ -17,62 +19,64 @@
                 <div>
                     <img class="logo" src="/images/logo.png">
                 </div>
-                <div >
+                <div>
                     <form class="d-flex justify-content-end align-items-center">
                         <input class="search-input mr-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#postModal" my-2 my-sm-0" type="button">Publicar</button>
-                      </form>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#postModal" my-2 my-sm-0"
+                            type="button">Publicar</button>
+                    </form>
                 </div>
             </div>
         </header>
 
-<!-- INICIO DE MODAL PARA PUBLICAR-->
-        <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!-- INICIO DE MODAL PARA PUBLICAR-->
+        <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
             <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Publicar entrada</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Categoría:</label>
-                        <input type="text" class="form-control" id="user-category">
-                      </div>
-                    <div class="form-group">
-                      <label for="recipient-name" class="col-form-label">Título:</label>
-                      <input type="text" class="form-control" id="user-title">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Publicar entrada</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
                     </div>
-                    <div class="form-group">
-                      <label for="message-text" class="col-form-label">Nueva entrada:</label>
-                      <textarea class="form-control" id="user-post"></textarea>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Categoría:</label>
+                                <input type="text" class="form-control" id="user-category">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Título:</label>
+                                <input type="text" class="form-control" id="user-title">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Nueva entrada:</label>
+                                <textarea class="form-control" id="user-post"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">URL de imagen:</label>
+                                <input class="form-control" id="URL-image-post"></input>
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Autor:</label>
+                                <input type="text" class="form-control" id="user-author">
+                            </div>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Fecha:</label>
+                                <input type="date">
+                            </div>
+                        </form>
                     </div>
-                    <div class="form-group">
-                        <label for="message-text" class="col-form-label">URL de imagen:</label>
-                        <input class="form-control" id="URL-image-post"></input>
-                      </div>
-                    <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Autor:</label>
-                        <input type="text" class="form-control" id="user-author">
-                      </div>
-                      <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Fecha:</label>
-                        <input type="date">
-                      </div>
-                  </form>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary" id="post-button">Publicar</button>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                  <button type="button" class="btn btn-primary" id="post-button">Publicar</button>
-                </div>
-              </div>
             </div>
-          </div>
-<!--FIN DE MODAL PARA PUBLICAR-->
-        
+        </div>
+        <!--FIN DE MODAL PARA PUBLICAR-->
+
 
         <div class="row my-2 mx-md-5 mx-1">
             <nav class="col-12 navbar navbar-light ">
@@ -87,16 +91,20 @@
         <div id="post-section" class="row my-2 mx-md-5 mx-1">
             <section class="col-12 col-md-8">
                 <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">
-                    <div class="post-card d-flex">                    
+                    <div class="post-card d-flex">
                         <div class="card-text">
                             <span class="post-category">SCIENCE</span><span class="post-popular">Popular Topic</span>
-                            <h2 class="post-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It Will End by 2050</h2>
-                            <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum animi, impedit, minima nihil iste saepe assumenda voluptatum vitae accusamus facere enim rem inventore ullam illo reiciendis, magnam odit nulla ea...</p>
+                            <h2 class="post-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It
+                                Will End by 2050</h2>
+                            <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum animi,
+                                impedit, minima nihil iste saepe assumenda voluptatum vitae accusamus facere enim rem
+                                inventore ullam illo reiciendis, magnam odit nulla ea...</p>
                             <p class="post-author y-1">By David Wallace-Wells</p>
                             <p class="post-date">Aug 06, 2019</p>
-                        </div>                
+                        </div>
                         <div class="card-image mx-md-3 mx-1">
-                            <img class="c-image" src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg">
+                            <img class="c-image"
+                                src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg">
                         </div>
                     </div>
                 </a>
@@ -104,51 +112,63 @@
                     <div class="post-card d-flex">
                         <div class="card-text">
                             <span class="post-category">SCIENCE</span><span class="post-popular">Popular Topic</span>
-                            <h2 class="post-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It Will End by 2050</h2>
-                            <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum animi, impedit, minima nihil iste saepe assumenda voluptatum vitae accusamus facere enim rem inventore ullam illo reiciendis, magnam odit nulla ea...</p>
+                            <h2 class="post-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It
+                                Will End by 2050</h2>
+                            <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum animi,
+                                impedit, minima nihil iste saepe assumenda voluptatum vitae accusamus facere enim rem
+                                inventore ullam illo reiciendis, magnam odit nulla ea...</p>
                             <p class="post-author">By David Wallace-Wells</p>
                             <p class="post-date">Aug 06, 2019</p>
-                        </div>                
-                        <div class="card-image mx-md-3 mx-1">
-                            <img class="c-image" src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg">
                         </div>
-                    </div> 
+                        <div class="card-image mx-md-3 mx-1">
+                            <img class="c-image"
+                                src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg">
+                        </div>
+                    </div>
                 </a>
             </section>
 
-<!--INICIO DE MODAL PARA VER PUBLICACIONES-->
+            <!--INICIO DE MODAL PARA VER PUBLICACIONES-->
             <div id="modal-window">
                 <div id="modal-card">
-                    <div class="modal fade" id="viewPost" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                            <div>
-                                <h5 class="modal-title" id="exampleModalLabel">Entrada</h5>
-                            </div>                      
-                          <div>
-                            <p class="modal-post-author">By David Wallace-Wells</p>
-                            <p class="modal-post-date">Aug 06, 2019</p>
-                          </div>
+                    <div class="modal fade" id="viewPost" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div>
+                                        <h5 class="modal-title" id="exampleModalLabel">Entrada</h5>
+                                    </div>
+                                    <div>
+                                        <p class="modal-post-author">By David Wallace-Wells</p>
+                                        <p class="modal-post-date">Aug 06, 2019</p>
+                                    </div>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="modal-card-text">
+                                        <img class="modal-c-image" style="align-items: center;"
+                                            src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg">
+                                        <span class="modal-post-category">SCIENCE</span><span
+                                            class="post-popular">Popular Topic</span>
+                                        <h2 class="modal-post-title">Jared Diamond: There’s a 49 Percent Chance the
+                                            World As We Know It Will End by 2050</h2>
+                                        <p class="modal-post-text">Lorem, ipsum dolor sit amet consectetur adipisicing
+                                            elit. Illum animi, impedit, minima nihil iste saepe assumenda voluptatum
+                                            vitae accusamus facere enim rem inventore ullam illo reiciendis, magnam odit
+                                            nulla ea...</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <div class="modal-card-text">
-                                <img class="modal-c-image" style="align-items: center;" src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg">
-                                <span class="modal-post-category">SCIENCE</span><span class="post-popular">Popular Topic</span>
-                                <h2 class="modal-post-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It Will End by 2050</h2>
-                                <p class="modal-post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum animi, impedit, minima nihil iste saepe assumenda voluptatum vitae accusamus facere enim rem inventore ullam illo reiciendis, magnam odit nulla ea...</p>
-                            </div> 
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                              </div>      
-                        </div>
-                      </div>
                     </div>
-                  </div>
-                </div>                
+                </div>
             </div>
-            
-<!--FIN DE MODAL PARA VER PUBLICACIONES-->              
+
+            <!--FIN DE MODAL PARA VER PUBLICACIONES-->
 
             <div class="col-12 col-md-4 d-flex flex-column justify-content-between">
                 <aside>
@@ -158,26 +178,29 @@
                     <ol>
                         <li class="aside-text">
                             <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">
-                                <h2 class="aside-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It Will End by 2050</h2>
+                                <h2 class="aside-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know
+                                    It Will End by 2050</h2>
                                 <p class="aside-author">By David Wallace-Wells</p>
                                 <p class="aside-date">Aug 06, 2019</p>
-                            </a>                            
+                            </a>
                         </li>
-                        <li class="aside-text">   
-                            <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">                         
-                                <h2 class="aside-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It Will End by 2050</h2>
+                        <li class="aside-text">
+                            <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">
+                                <h2 class="aside-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know
+                                    It Will End by 2050</h2>
                                 <p class="aside-author">By David Wallace-Wells</p>
-                                <p class="aside-date">Aug 06, 2019</p>    
-                            </a>                        
+                                <p class="aside-date">Aug 06, 2019</p>
+                            </a>
                         </li>
-                        <li class="aside-text">     
-                            <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">                       
-                                <h2 class="aside-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It Will End by 2050</h2>
+                        <li class="aside-text">
+                            <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">
+                                <h2 class="aside-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know
+                                    It Will End by 2050</h2>
                                 <p class="aside-author">By David Wallace-Wells</p>
-                                <p class="aside-date">Aug 06, 2019</p> 
-                            </a>                          
-                        </li>                  
-                    </ol>                             
+                                <p class="aside-date">Aug 06, 2019</p>
+                            </a>
+                        </li>
+                    </ol>
                 </aside>
                 <footer class="d-none d-sm-none d-md-block">
                     <a class="a-footer" href="">Ayuda</a>
@@ -204,4 +227,5 @@
         crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
