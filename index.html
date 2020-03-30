@@ -66,7 +66,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                  <button type="button" class="btn btn-primary">Publicar</button>
+                  <button type="button" class="btn btn-primary" id="post-button">Publicar</button>
                 </div>
               </div>
             </div>
@@ -84,7 +84,7 @@
             </nav>
         </div>
 
-        <div class="row my-2 mx-md-5 mx-1">
+        <div id="post-section" class="row my-2 mx-md-5 mx-1">
             <section class="col-12 col-md-8">
                 <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">
                     <div class="post-card d-flex">                    
@@ -117,32 +117,37 @@
             </section>
 
 <!--INICIO DE MODAL PARA VER PUBLICACIONES-->
-            <div class="modal fade" id="viewPost" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                        <div>
-                            <h5 class="modal-title" id="exampleModalLabel">Entrada</h5>
-                        </div>                      
-                      <div>
-                        <p class="modal-post-author">By David Wallace-Wells</p>
-                        <p class="modal-post-date">Aug 06, 2019</p>
+            <div id="modal-window">
+                <div id="modal-card">
+                    <div class="modal fade" id="viewPost" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                            <div>
+                                <h5 class="modal-title" id="exampleModalLabel">Entrada</h5>
+                            </div>                      
+                          <div>
+                            <p class="modal-post-author">By David Wallace-Wells</p>
+                            <p class="modal-post-date">Aug 06, 2019</p>
+                          </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-card-text">
+                                <img class="modal-c-image" style="align-items: center;" src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg">
+                                <span class="modal-post-category">SCIENCE</span><span class="post-popular">Popular Topic</span>
+                                <h2 class="modal-post-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It Will End by 2050</h2>
+                                <p class="modal-post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum animi, impedit, minima nihil iste saepe assumenda voluptatum vitae accusamus facere enim rem inventore ullam illo reiciendis, magnam odit nulla ea...</p>
+                            </div> 
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                              </div>      
+                        </div>
                       </div>
                     </div>
-                    <div class="modal-body">
-                        <div class="modal-card-text">
-                            <img class="modal-c-image" style="align-items: center;" src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg">
-                            <span class="modal-post-category">SCIENCE</span><span class="post-popular">Popular Topic</span>
-                            <h2 class="modal-post-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It Will End by 2050</h2>
-                            <p class="modal-post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum animi, impedit, minima nihil iste saepe assumenda voluptatum vitae accusamus facere enim rem inventore ullam illo reiciendis, magnam odit nulla ea...</p>
-                        </div> 
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                          </div>      
-                    </div>
                   </div>
-                </div>
-              </div>
+                </div>                
+            </div>
+            
 <!--FIN DE MODAL PARA VER PUBLICACIONES-->              
 
             <div class="col-12 col-md-4 d-flex flex-column justify-content-between">
