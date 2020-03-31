@@ -12,16 +12,21 @@
     
     <div class="container-fluid">
 
-        <header class="row my-3 mx-md-5 mx-1">
-            <div class="col-12 d-flex justify-content-between align-items-center">
+        <header class="row my-3 mx-md-5 mx-1 ">
+            <div class="hdr col-12 d-flex justify-content-between align-items-center fixed-top py-md-2">
                 <div>
                     <img class="logo" src="/images/logo.png">
                 </div>
-                <div >
-                    <form class="d-flex justify-content-end align-items-center">
-                        <input class="search-input mr-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#postModal" my-2 my-sm-0" type="button">Publicar</button>
-                      </form>
+                <div>
+                    <form >
+                        <div class="search-btn">
+                            <input id= "search-in" class="search-input" type="search" placeholder="Buscar" aria-label="Search">
+                            <button id="search-but" class="btn btn-primary my-2 my-sm-0" type="button">Buscar</button>
+                        </div>
+                    </form>
+                </div>
+                <div>
+                    <button class="btn btn-success" data-toggle="modal" data-target="#postModal" my-2 my-sm-0" type="button">Publicar</button>
                 </div>
             </div>
         </header>
@@ -37,7 +42,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  <form>
+                  <form id="modal-form">
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Categoría:</label>
                         <input type="text" class="form-control" id="user-category">
@@ -66,7 +71,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                  <button type="button" class="btn btn-primary" id="post-button">Publicar</button>
+                  <button type="button" class="btn btn-primary" id="post-button" data-dismiss="modal">Publicar</button>
                 </div>
               </div>
             </div>
@@ -74,7 +79,7 @@
 <!--FIN DE MODAL PARA PUBLICAR-->
         
 
-        <div class="row my-2 mx-md-5 mx-1">
+        <div class="row my-2 mx-md-5 mx-1 pt-md-3">
             <nav class="col-12 navbar navbar-light ">
                 <a class="a-nav" href="">NAV1</a>
                 <a class="a-nav" href="">NAV2</a>
@@ -85,7 +90,7 @@
         </div>
 
         <div id="post-section" class="row my-2 mx-md-5 mx-1">
-            <section class="col-12 col-md-8">
+            <section class="col-12 col-md-8 mt-5">
                 <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">
                     <div class="post-card d-flex">                    
                         <div class="card-text">
