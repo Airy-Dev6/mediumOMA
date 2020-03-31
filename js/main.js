@@ -4,10 +4,13 @@ const getPostData = () => {
     let postUserEntry = $("#user-post").val();
     let urlImage = $("#URL-image-post").val();
     let author = $("#user-author").val();
-    let date = $("#user-date").val();
-    let postObject = {category, title, postUserEntry, urlImage, author, date};
-        
+    let popular = 0;
+    let postObject = {category, title, postUserEntry, urlImage, author, popular};
+    $('#modal-form')[0].reset()
+    location.reload()  
     addPostToDB(postObject);
+   
+
 }
 
 $("#post-button").on("click",getPostData);
@@ -100,3 +103,30 @@ const getPostFromDb = () => {
 }
 
 getPostFromDb()
+
+const deletePost = (PostId) => { //se crea una funcion que nos permitira ingresar el ID a eliminar
+    
+
+    let xhttp = new XMLHttpRequest()//se crea una variable con la consulta XMLHTTP
+
+    xhttp.onreadystatechange = function(){ //una funcion va a ejecutarse cada que cambie el readyState
+        if(this.readyState == 4 && this.status == 200){ //si readyState y status están OK... 
+            
+            let response = JSON.parse(this.responseText) //se crea una variable que parsea respuesta
+            console.log(response) //nos manda la respuesta de la consulta (o sea sabremos si se mandó o no nuestro objeto)
+        }
+    }
+
+    xhttp.open("DELETE",`https://javascript-ajax-d0ce6.firebaseio.com/omar/post/${PostId}.json`,true)
+    xhttp.send() //envia la solicitud al servidor.
+}
+
+
+const filteredArray = () =>{
+    let searchIn = "Medicina";
+    postArray.filter ((post) => {
+        return post.category === searchIn;         
+    })  
+}
+
+//$("#search-but").on("click",filteredArray);
