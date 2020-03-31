@@ -43,7 +43,23 @@ const printPostAtMain = (array) => {
             post.popular = " "
         }
         let entrySlice = post.postUserEntry.slice(0,150)
-
+        $("#post-section").find("section").append(`
+        <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost${post.key}">
+        <div class="post-card d-flex">                    
+            <div class="card-text">
+                <span class="post-category">${post.category}</span><span class="post-popular">${post.popular}</span>
+                <h2 class="post-title">${post.title}</h2>
+                <p class="post-text">${entrySlice}...</p>
+                <p class="post-author y-1">${post.author}</p>                
+            </div>                
+            <div class="card-image mx-md-3 mx-1">
+                <img class="c-image" src="${post.urlImage}">                
+            </div>
+        </div>
+        </a>
+        `)
+    })    
+}
 
 
 const printPostAtSide = () => {
