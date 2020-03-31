@@ -1,1 +1,293 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hdr {
+  background-color: white;
+}
+
+.logo {
+  width: 80%;
+}
+
+.scrollmenu::-webkit-scrollbar {
+  width: 1px;
+}
+
+.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.a-nav {
+  color: lightslategray;
+  margin-right: 150px;
+}
+
+.a-nav:hover {
+  color: darkslategray;
+}
+
+.search-input {
+  width: 60%;
+  height: calc(1.5em + .75rem + 2px);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  -webkit-transition: border-color .15s;
+  transition: border-color .15s;
+}
+
+.card-image {
+  width: 30%;
+}
+
+.c-image {
+  width: 100%;
+}
+
+.post-modal:link, .post-modal:visited, .post-modal:hover, .post-modal:active {
+  text-decoration: none;
+}
+
+.post-card {
+  padding-bottom: 20px;
+}
+
+.card-text {
+  width: 70%;
+}
+
+.post-category {
+  padding-right: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.post-popular {
+  font-size: 14px;
+  font-style: oblique;
+  color: gray;
+}
+
+.post-title {
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.post-text {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 0;
+}
+
+.post-author {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.post-date {
+  font-size: 14px;
+  color: gray;
+}
+
+.modal-title {
+  font-weight: bold;
+}
+
+.modal-card-text {
+  width: 100%;
+}
+
+.modal-c-image {
+  width: 100%;
+}
+
+.modal-post-category {
+  padding-right: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.modal-post-popular {
+  font-size: 14px;
+  font-style: oblique;
+  color: gray;
+}
+
+.modal-post-title {
+  color: black;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.modal-post-text {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 0;
+}
+
+.modal-post-author {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.modal-post-date {
+  font-size: 14px;
+  color: gray;
+}
+
+.aside-header {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.aside-index {
+  font-size: 25px;
+  font-weight: bold;
+  color: lightslategray;
+}
+
+.aside-title {
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.aside-author {
+  color: black;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.aside-date {
+  font-size: 14px;
+  color: gray;
+}
+
+.search-btn {
+  text-align: center;
+}
+
+@media only screen and (min-width: 520px) {
+  .logo {
+    width: 100%;
+  }
+  .card-text {
+    width: 70%;
+  }
+  .card-image {
+    width: 30%;
+  }
+  .c-image {
+    width: 100%;
+  }
+  .post-category {
+    padding-right: 20px;
+    font-size: 15px;
+    color: gray;
+  }
+  .post-card {
+    padding-bottom: 20px;
+  }
+  .post-popular {
+    font-size: 15px;
+    font-style: oblique;
+    color: gray;
+  }
+  .post-title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .post-text {
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 0;
+  }
+  .post-author {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .post-date {
+    font-size: 14px;
+    color: gray;
+  }
+  .modal-card-text {
+    width: 100%;
+  }
+  .modal-c-image {
+    width: 100%;
+  }
+  .modal-post-category {
+    padding-right: 10px;
+    font-size: 15px;
+    color: gray;
+  }
+  .modal-post-popular {
+    font-size: 15px;
+    font-style: oblique;
+    color: gray;
+  }
+  .modal-post-title {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .modal-post-text {
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 0;
+  }
+  .modal-post-author {
+    color: black;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .modal-post-date {
+    font-size: 14px;
+    color: gray;
+  }
+  .aside-header {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .aside-index {
+    font-size: 25px;
+    font-weight: bold;
+    color: lightslategray;
+  }
+  .aside-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .aside-author {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .aside-date {
+    font-size: 14px;
+    color: gray;
+  }
+  .a-footer {
+    font-size: 14px;
+    padding-right: 8px;
+    color: lightslategray;
+  }
+  .a-footer:hover {
+    color: darkslategray;
+  }
+  .search-input {
+    height: calc(1.5em + .75rem + 2px);
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=style.css.map */
