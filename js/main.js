@@ -29,9 +29,9 @@ const addPostToDB = (postEntry) => {
 }
 
 
-const printPostAtMain = () => {
+const printPostAtMain = (array) => {
     $("#post-section").find("section").empty();
-    postArray.forEach((post) => {
+    array.forEach((post) => {
         let entrySlice = post.postUserEntry.slice(0,150)
         $("#post-section").find("section").append(`
         <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost${post.key}">
@@ -88,7 +88,7 @@ const printPostAtModal = () => {
 
 
 const getPostFromDb = () => {
-    postArray = [];
+    postArray= [];
     $.ajax({
         url:"https://javascript-ajax-d0ce6.firebaseio.com/omar/post/.json",
         method:"GET",
@@ -96,7 +96,7 @@ const getPostFromDb = () => {
             $.each(response,(key,value)=>{
                 postArray.push({...value,key})                
             })
-            printPostAtMain();
+            printPostAtMain(postArray);
             printPostAtModal();
         }
     })
@@ -122,11 +122,18 @@ const deletePost = (PostId) => { //se crea una funcion que nos permitira ingresa
 }
 
 
-const filteredArray = () =>{
-    let searchIn = "Medicina";
-    postArray.filter ((post) => {
-        return post.category === searchIn;         
-    })  
+
+const filterArray = () =>{
+    console.log(postArray)
+    let resultFilter = postArray.filter ((post) => {
+        return post.category === "Medicina";    
+    })
+    return resultFilter
 }
 
-//$("#search-but").on("click",filteredArray);
+//document.getElementById('search-but').addEventListener('click',filterArray)
+
+$("#search-but").on("click", () =>{
+    newArray = filterArray(array)
+    console.log(filterArray())
+});

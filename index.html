@@ -15,18 +15,11 @@
     <div class="container-fluid">
 
         <header class="row my-3 mx-md-5 mx-1 ">
-            <div class="hdr col-12 d-flex justify-content-between align-items-center fixed-top py-md-2">
+            <div class="hdr col-12 d-flex justify-content-between align-items-center fixed-top pt-4 py-md-2">
                 <div>
                     <img class="logo" src="/images/logo.png">
                 </div>
                 <div>
-
-                    <form class="d-flex justify-content-end align-items-center">
-                        <input class="search-input mr-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#postModal" my-2 my-sm-0"
-                            type="button">Publicar</button>
-                    </form>
-
                     <form >
                         <div class="search-btn">
                             <input id= "search-in" class="search-input" type="search" placeholder="Buscar" aria-label="Search">
@@ -36,14 +29,12 @@
                 </div>
                 <div>
                     <button class="btn btn-success" data-toggle="modal" data-target="#postModal" my-2 my-sm-0" type="button">Publicar</button>
-
                 </div>
             </div>
         </header>
 
         <!-- INICIO DE MODAL PARA PUBLICAR-->
-        <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
+        <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header">
@@ -61,46 +52,35 @@
                     <div class="form-group">
                       <label for="recipient-name" class="col-form-label">Título:</label>
                       <input type="text" class="form-control" id="user-title">
-
                     </div>
-                    <div class="modal-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Categoría:</label>
-                                <input type="text" class="form-control" id="user-category">
-                            </div>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Título:</label>
-                                <input type="text" class="form-control" id="user-title">
-                            </div>
-                            <div class="form-group">
-                                <label for="message-text" class="col-form-label">Nueva entrada:</label>
-                                <textarea class="form-control" id="user-post"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <label for="message-text" class="col-form-label">URL de imagen:</label>
-                                <input class="form-control" id="URL-image-post"></input>
-                            </div>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Autor:</label>
-                                <input type="text" class="form-control" id="user-author">
-                            </div>
-                            <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Fecha:</label>
-                                <input type="date">
-                            </div>
-                        </form>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Nueva entrada:</label>
+                      <textarea class="form-control" id="user-post"></textarea>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary" id="post-button">Publicar</button>
-                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">URL de imagen:</label>
+                        <input class="form-control" id="URL-image-post"></input>
+                      </div>
+                    <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Autor:</label>
+                        <input type="text" class="form-control" id="user-author">
+                      </div>
+                      <div class="form-group">
+                        <label for="recipient-name" class="col-form-label">Fecha:</label>
+                        <input type="date">
+                      </div>
+                  </form>
                 </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary" id="post-button" data-dismiss="modal">Publicar</button>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
         <!--FIN DE MODAL PARA PUBLICAR-->
 
-        <div class="row my-2 mx-md-5 mx-1 pt-md-3">
+        <div class="row my-2 mx-md-5 mx-1 mt-5 pt-5 pt-md-4">
             <nav class="col-12 scrollmenu">
                 <a class="a-nav" href="">NAV1</a>
                 <a class="a-nav" href="">NAV2</a>
