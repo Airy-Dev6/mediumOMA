@@ -64,11 +64,13 @@
                     <div class="form-group">
                         <label for="recipient-name" class="col-form-label">Autor:</label>
                         <input type="text" class="form-control" id="user-author">
-                      </div>
-                      <div class="form-group">
-                        <label for="recipient-name" class="col-form-label">Fecha:</label>
-                        <input type="date">
-                      </div>
+                    </div>
+                    <div class="form-group text-center">
+                        <input class="form-check-input" type="checkbox" value="" id="user-popular">
+                        <label class="form-check-label" for="defaultCheck1">
+                          Popular
+                        </label>
+                    </div>
                   </form>
                 </div>
                 <div class="modal-footer">
@@ -82,54 +84,19 @@
 
         <div class="row my-2 mx-md-5 mx-1 mt-5 pt-5 pt-md-4">
             <nav class="col-12 scrollmenu">
-                <a class="a-nav" href="">NAV1</a>
-                <a class="a-nav" href="">NAV2</a>
-                <a class="a-nav" href="">NAV3</a>
-                <a class="a-nav" href="">NAV4</a>
-                <a class="a-nav" href="">NAV5</a>
-                <a href="" class="a-nav">NAV6</a>
-                <a href="" class="a-nav">NAV7</a>
+                <a class="a-nav" href="">HOME</a>
+                <a class="a-nav" href="">DEPORTES</a>
+                <a class="a-nav" href="">SALUD</a>
+                <a class="a-nav" href="">MASCOTAS</a>
+                <a class="a-nav" href="">ALIMENTACIÓN</a>
+                <a href="" class="a-nav">OCIO</a>
+                <a href="" class="a-nav">TECNOLOGÍA</a>
             </nav>
         </div>
 
         <div id="post-section" class="row my-2 mx-md-5 mx-1">
             <section class="col-12 col-md-8 mt-5">
-                <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">
-                    <div class="post-card d-flex">
-                        <div class="card-text">
-                            <span class="post-category">SCIENCE</span><span class="post-popular">Popular Topic</span>
-                            <h2 class="post-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It
-                                Will End by 2050</h2>
-                            <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum animi,
-                                impedit, minima nihil iste saepe assumenda voluptatum vitae accusamus facere enim rem
-                                inventore ullam illo reiciendis, magnam odit nulla ea...</p>
-                            <p class="post-author y-1">By David Wallace-Wells</p>
-                            <p class="post-date">Aug 06, 2019</p>
-                        </div>
-                        <div class="card-image mx-md-3 mx-1">
-                            <img class="c-image"
-                                src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg">
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">
-                    <div class="post-card d-flex">
-                        <div class="card-text">
-                            <span class="post-category">SCIENCE</span><span class="post-popular">Popular Topic</span>
-                            <h2 class="post-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know It
-                                Will End by 2050</h2>
-                            <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum animi,
-                                impedit, minima nihil iste saepe assumenda voluptatum vitae accusamus facere enim rem
-                                inventore ullam illo reiciendis, magnam odit nulla ea...</p>
-                            <p class="post-author">By David Wallace-Wells</p>
-                            <p class="post-date">Aug 06, 2019</p>
-                        </div>
-                        <div class="card-image mx-md-3 mx-1">
-                            <img class="c-image"
-                                src="https://image.shutterstock.com/image-photo/white-transparent-leaf-on-mirror-260nw-577160911.jpg">
-                        </div>
-                    </div>
-                </a>
+                
             </section>
 
             <!--INICIO DE MODAL PARA VER PUBLICACIONES-->
@@ -177,33 +144,10 @@
             <div class="col-12 col-md-4 d-flex flex-column justify-content-between">
                 <aside>
                     <div>
-                        <h2 class="aside-header">MOST POPULAR</h2>
+                        <h2 class="aside-header">ENTRADAS POPULARES</h2>
                     </div>
-                    <ol>
-                        <li class="aside-text">
-                            <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">
-                                <h2 class="aside-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know
-                                    It Will End by 2050</h2>
-                                <p class="aside-author">By David Wallace-Wells</p>
-                                <p class="aside-date">Aug 06, 2019</p>
-                            </a>
-                        </li>
-                        <li class="aside-text">
-                            <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">
-                                <h2 class="aside-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know
-                                    It Will End by 2050</h2>
-                                <p class="aside-author">By David Wallace-Wells</p>
-                                <p class="aside-date">Aug 06, 2019</p>
-                            </a>
-                        </li>
-                        <li class="aside-text">
-                            <a href="" class="post-modal" data-toggle="modal" data-target="#viewPost">
-                                <h2 class="aside-title">Jared Diamond: There’s a 49 Percent Chance the World As We Know
-                                    It Will End by 2050</h2>
-                                <p class="aside-author">By David Wallace-Wells</p>
-                                <p class="aside-date">Aug 06, 2019</p>
-                            </a>
-                        </li>
+                    <ol class="aside-container">
+
                     </ol>
                 </aside>
                 <footer class="d-none d-sm-none d-md-block">
