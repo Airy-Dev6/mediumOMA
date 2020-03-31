@@ -24,7 +24,7 @@
   margin-right: 150px;
 }
 
-.a-nav-link {
+.a-nav:hover {
   color: darkslategray;
 }
 
